@@ -1,0 +1,125 @@
+.reasons {
+    display: flex;
+    gap: 10px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.gym-images {
+    display: flex;
+    gap: 10px;
+}
+
+.image1 {
+    height: 420px;
+    width: 200px;
+}
+
+.collection-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image2 {
+    width: 400px;
+    height: 210px;
+}
+
+.collection-images>:nth-child(2) {
+    display: flex;
+    gap: 10px;
+}
+
+.image3 {
+    width: 195px;
+    height: 200px;
+}
+
+.image4 {
+    width: 195px;
+    height: 200px;
+}
+
+.reasons-text {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    padding-right: 130px;
+    padding-left: 20px;
+    color: white;
+}
+
+.reasons-text>:nth-child(1) {
+    color: var(--orange);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.reasons-text>:nth-child(2) {
+    font-size: 45px;
+    margin: 0px;
+}
+
+.reasons-points {
+    display: flex;
+    flex-direction: column;
+}
+
+.reasons-point {
+    display: flex;
+    height: 5px;
+    gap: 10px;
+}
+
+.tick-image {
+    height: 20px;
+    width: 20px;
+    margin-top: 2px;
+}
+
+.reasons-text>:nth-child(4) {
+    color: var(--gray);
+}
+
+.reasons-text>:nth-child(5)>img {
+    height: 25px;
+    width: 28px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .reasons {
+        flex-direction: column;
+    }
+
+    .reasons-text {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .reasons-text>:nth-child(2){
+        font-size: 35px;
+    }
+
+    .gym-images{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image1,.image2{
+        width: 100%;
+    }
+    .image3,.image4{
+        width: 50%;
+    }
+    .image1{
+        height: 400px;
+        margin-right: 20px;
+    }
+
+    /* .collection-images{
+        flex-direction: column;
+    } */
+}
